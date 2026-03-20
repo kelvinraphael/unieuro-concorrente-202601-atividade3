@@ -93,13 +93,13 @@ Cada processo recebeu uma parte dos arquivos para processar, e os resultados for
 ## 6. Gráficos
 
 - **Tempo de execução x nº de processos:**  
-  ![Tempo de execução](grafico/grafico_tempo.png)
+  ![Tempo de execução](graficos/grafico_tempo.png)
 
 - **Speedup x nº de processos:**  
-  ![Speedup](grafico/grafico_speedup.png)
+  ![Speedup](graficos/grafico_speedup.png)
 
 - **Eficiência x nº de processos:**  
-  ![Eficiência](grafico/grafico_eficiencia.png)
+  ![Eficiência](graficos/grafico_eficiencia.png)
 
 ---
 
