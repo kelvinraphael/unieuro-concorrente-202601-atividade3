@@ -54,7 +54,7 @@ Cada processo recebeu uma parte dos arquivos para processar, e os resultados for
 
 | Nº de Processos | Tempo (s) |
 |-----------------|-----------|
-| 1 (Serial)      | 115.96    |
+| 1 (Serial)      | 20.473    |
 | 2               | 10.71     |
 | 4               | 5.75      |
 | 8               | 3.66      |
@@ -62,20 +62,13 @@ Cada processo recebeu uma parte dos arquivos para processar, e os resultados for
 
 ### 4.2 Speedup e Eficiência
 
-**Cálculos:**
-
-- **Speedup(p) = T(1) / T(p)**  
-- **Eficiência(p) = Speedup(p) / p**
-
 | Processos | Speedup | Eficiência |
 |-----------|---------|------------|
 | 1         | 1.00    | 1.00       |
-| 2         | 10.82   | 5.41%      |
-| 4         | 20.17   | 5.04%      |
-| 8         | 31.70   | 3.96%      |
-| 12        | 36.02   | 3.00%      |
-
-*(Obs.: valores de Speedup e Eficiência calculados com base no tempo serial de 115.96s)*
+| 2         | 1.91    | 0.955      |
+| 4         | 3.56    | 0.89       |
+| 8         | 5.59    | 0.699      |
+| 12        | 6.36    | 0.53       |
 
 ---
 
@@ -125,7 +118,3 @@ Cada processo recebeu uma parte dos arquivos para processar, e os resultados for
 - A eficiência diminui com o aumento de processos devido a overhead de sincronização e balanceamento de carga.  
 - O uso do modelo produtor-consumidor com buffer limitado permitiu processar os arquivos em paralelo de forma segura e eficiente.  
 - Para operações CPU-bound em Python, o **multiprocessing** é a forma mais adequada para contornar o GIL e obter verdadeiro paralelismo.
-
----
-
-**Observação:** substitua os caminhos das imagens (`grafico_tempo.png`, etc.) pelo caminho correto no seu repositório se necessário.
